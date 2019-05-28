@@ -35,19 +35,19 @@
         android:id="@+id/multiple_actions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/plus"
         app:fab_addButtonColorNormal="@color/white"
         app:fab_addButtonColorPressed="@color/white_pressed"
         app:fab_addButtonPlusIconColor="@color/half_black"
         app:fab_labelStyle="@style/menu_labels_style"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:src="@drawable/plus"
         app:layout_anchor="@id/linearLayout"
         app:layout_anchorGravity="bottom|right|end"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,50 +55,63 @@
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/move_button"
-            android:src="@drawable/file_move"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/file_move"
             app:fab_colorNormal="@color/white"
-            app:fab_title="Move"
-            app:fab_colorPressed="@color/white_pressed"/>
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_title="Move" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/copy_button"
-            android:src="@drawable/file_replace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/file_replace"
             app:fab_colorNormal="@color/white"
-            app:fab_title="Copy"
-            app:fab_colorPressed="@color/white_pressed"/>
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_title="Copy" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/rename_button"
-            android:src="@drawable/rename_box"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/rename_box"
             app:fab_colorNormal="@color/white"
-            app:fab_title="Rename"
-            app:fab_colorPressed="@color/white_pressed"/>
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_title="Rename" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/add_button"
-            android:src="@drawable/file_plus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/file_plus"
             app:fab_colorNormal="@color/white"
-            app:fab_title="Create"
-            app:fab_colorPressed="@color/white_pressed"/>
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_title="Create" />
 
         <com.getbase.floatingactionbutton.FloatingActionButton
             android:id="@+id/delete_button"
-            android:src="@drawable/trash_can"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:src="@drawable/trash_can"
             app:fab_colorNormal="@color/white"
-            app:fab_title="Delete"
-            app:fab_colorPressed="@color/white_pressed"/>
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_title="Delete" />
 
     </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empty folder"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

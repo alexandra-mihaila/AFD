@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".dialogs.CreateDialog"></activity>
+        <activity android:name=".DeleteActivity"></activity>
+        <activity android:name=".RenameActivity"></activity>
     </application>
 
 </manifest>

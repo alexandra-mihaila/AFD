@@ -6,14 +6,14 @@
 
 
     <EditText
-        android:id="@+id/cd_item_name"
-        android:layout_width="fill_parent"
+        android:id="@+id/item_name"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:hint="Name"
         android:layout_gravity="center"
-        android:paddingLeft="3dp"
-        android:paddingRight="3dp"
+        android:padding="20dp"
+        android:paddingHorizontal="40dp"
         />
 
 </LinearLayout>
