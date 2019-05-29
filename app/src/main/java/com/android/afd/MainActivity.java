@@ -169,6 +169,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 actionsButton.collapse();
+                Intent intent = new Intent(getApplicationContext(), CopyActivity.class);
+                Bundle b = new Bundle();
+                b.putString("root", root.getAbsolutePath());
+                intent.putExtras(b);
+                startActivityForResult(intent, 1);
+                overridePendingTransition(R.anim.slide_up,  R.anim.no_animation);
             }
         });
 
@@ -177,6 +183,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 actionsButton.collapse();
+                Intent intent = new Intent(getApplicationContext(), MoveActivity.class);
+                Bundle b = new Bundle();
+                b.putString("root", root.getAbsolutePath());
+                intent.putExtras(b);
+                startActivityForResult(intent, 1);
+                overridePendingTransition(R.anim.slide_up,  R.anim.no_animation);
             }
         });
 
@@ -238,7 +250,9 @@ public class MainActivity extends AppCompatActivity {
                     currentDirectories.clear();
                     displayCurrentDirectory(clickedItem);
                 } else {
-                    // open file
+                    Intent intent = new Intent(MainActivity.this, EditActivity.class);
+                    intent.putExtra("file", clickedItem.getAbsolutePath());
+                    startActivity(intent);
                 }
                 actionsButton.collapse();
             }

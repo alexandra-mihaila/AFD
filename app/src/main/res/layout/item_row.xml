@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/folder"/>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/item_icon"
+        android:maxLines="1"
+        android:text="Item"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="@android:color/black"
+        android:textSize="17sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/modified_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_name"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_marginTop="12dp"
+        android:text="Last modified time"
+        android:textColor="@android:color/black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/size_nr_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_name"
+        android:layout_marginTop="-7dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="15dip"
+        android:text="Size or nr files"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textColor="@android:color/black">
+    </TextView>
+
+</RelativeLayout>

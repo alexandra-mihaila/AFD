@@ -22,6 +22,10 @@
 
         <activity android:name=".DeleteActivity"></activity>
         <activity android:name=".RenameActivity"></activity>
+        <activity android:name=".CopyActivity"></activity>
+        <activity android:name=".MoveActivity"></activity>
+        <activity android:name=".FindPathActivity"></activity>
+        <activity android:name=".EditActivity"></activity>
     </application>
 
 </manifest>
